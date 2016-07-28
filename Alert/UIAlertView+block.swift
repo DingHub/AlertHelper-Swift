@@ -13,7 +13,7 @@ extension UIAlertView {
                      message: String?,
                      cancelButtonTitle: String?,
                      otherButtonTitles: [String]?,
-                     buttonTappedHandler: AlertButtonTappedBlock) {        
+                     buttonTappedHandler: AlertButtonTappedBlock?) {
         
         let alertView = UIAlertView(title: title, message:message, delegate:UIApplication.sharedApplication(), cancelButtonTitle:cancelButtonTitle)
         for title in otherButtonTitles! {

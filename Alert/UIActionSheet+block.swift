@@ -14,7 +14,7 @@ extension UIActionSheet {
                        destructiveTitle: String?,
                        cancelButtonTitle: String?,
                        otherButtonTitles: [String]?,
-                       buttonTappedHandler: AlertButtonTappedBlock) {
+                       buttonTappedHandler: AlertButtonTappedBlock?) {
         let actionSheet = UIActionSheet(title: title, delegate: UIApplication.sharedApplication(), cancelButtonTitle: cancelButtonTitle, destructiveButtonTitle: destructiveTitle)
         
         for title in otherButtonTitles! {

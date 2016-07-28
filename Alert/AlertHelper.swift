@@ -43,7 +43,7 @@ public func showAlertViewFor(viewController: UIViewController?,
                       destructiveButtonTitle: String?,
                       cancelButtonTitle: String?,
                       otherButtonTitles: [String]?,
-                      buttonTappedHandler: AlertButtonTappedBlock) {
+                      buttonTappedHandler: AlertButtonTappedBlock?) {
     if #available(iOS 8.0, *) {
         if let viewController = viewController {
             UIAlertController.show(viewController: viewController, title: title, message: message, destructiveButtonTitle: destructiveButtonTitle, cancelButtonTitle: cancelButtonTitle, otherButtonTitles: otherButtonTitles, buttonTappedHandler: buttonTappedHandler)

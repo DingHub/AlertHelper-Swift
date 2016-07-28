@@ -18,21 +18,21 @@ extension UIAlertController {
                      destructiveButtonTitle: String?,
                      cancelButtonTitle: String?,
                      otherButtonTitles: [String]?,
-                     buttonTappedHandler: AlertButtonTappedBlock) {
+                     buttonTappedHandler: AlertButtonTappedBlock?) {
         
         let alertController = UIAlertController(title: title, message: message, preferredStyle: style)
         if let destructiveButtonTitle = destructiveButtonTitle {
             let action = UIAlertAction(title: destructiveButtonTitle, style: .Destructive, handler: { (UIAlertAction) in
-                buttonTappedHandler(0)
+                buttonTappedHandler?(0)
             })
             alertController.addAction(action)
         }
         if let cancelButtonTitle = cancelButtonTitle {
             let action = UIAlertAction(title: cancelButtonTitle, style: .Cancel, handler: { (UIAlertAction) in
                 if destructiveButtonTitle != nil {
-                    buttonTappedHandler(1)
+                    buttonTappedHandler?(1)
                 } else {
-                    buttonTappedHandler(0)
+                    buttonTappedHandler?(0)
                 }
                 
             })
@@ -42,11 +42,11 @@ extension UIAlertController {
             for (index, title) in otherButtonTitles.enumerate() {
                 let action = UIAlertAction(title: title, style: .Default, handler: { (UIAlertAction) in
                     if destructiveButtonTitle != nil && cancelButtonTitle != nil {
-                        buttonTappedHandler(2 + index)
+                        buttonTappedHandler?(2 + index)
                     } else if destructiveButtonTitle == nil && cancelButtonTitle == nil {
-                        buttonTappedHandler(index)
+                        buttonTappedHandler?(index)
                     } else {
-                        buttonTappedHandler(1 + index)
+                        buttonTappedHandler?(1 + index)
                     }
                 })
                 alertController.addAction(action)
