@@ -9,6 +9,7 @@
 import UIKit
 
 extension UIViewController {
+    
     /**
      Show an alert view with a call back block
      If the system version < 8.0, we will use UIAlertView , otherwise, UIAlertController
@@ -25,11 +26,23 @@ extension UIViewController {
                               cancelButtonTitle: String? = nil,
                               otherButtonTitles: [String]? = nil,
                               buttonTappedHandler: AlertButtonTappedBlock? = nil) {
+        
         if #available(iOS 8.0, *) {
-            UIAlertController.show(viewController: self, title: title, message: message, destructiveButtonTitle: destructiveButtonTitle, cancelButtonTitle: cancelButtonTitle, otherButtonTitles: otherButtonTitles, buttonTappedHandler: buttonTappedHandler)
+            UIAlertController.show(viewController: self,
+                                   title: title,
+                                   message: message,
+                                   destructiveButtonTitle: destructiveButtonTitle,
+                                   cancelButtonTitle: cancelButtonTitle,
+                                   otherButtonTitles: otherButtonTitles,
+                                   buttonTappedHandler: buttonTappedHandler)
         } else {
-            UIAlertView.show(title, message: message, cancelButtonTitle: cancelButtonTitle, otherButtonTitles: otherButtonTitles, buttonTappedHandler: buttonTappedHandler)
+            UIAlertView.show(title,
+                             message: message,
+                             cancelButtonTitle: cancelButtonTitle,
+                             otherButtonTitles: otherButtonTitles,
+                             buttonTappedHandler: buttonTappedHandler)
         }
+        
     }
     
     /**
@@ -52,9 +65,24 @@ extension UIViewController {
                                 buttonTappedHandler: AlertButtonTappedBlock? = nil) {
         
         if #available(iOS 8.0, *) {
-            UIAlertController.show(.ActionSheet, viewController: self, sourceRect: sourceRect, title: title, message: message, destructiveButtonTitle: destructiveButtonTitle, cancelButtonTitle: cancelButtonTitle, otherButtonTitles: otherButtonTitles, buttonTappedHandler: buttonTappedHandler)
+            UIAlertController.show(.ActionSheet,
+                                   viewController: self,
+                                   sourceRect: sourceRect,
+                                   title: title,
+                                   message: message,
+                                   destructiveButtonTitle: destructiveButtonTitle,
+                                   cancelButtonTitle: cancelButtonTitle,
+                                   otherButtonTitles: otherButtonTitles,
+                                   buttonTappedHandler: buttonTappedHandler)
         } else {
-            UIActionSheet.showIn(self.view, title: title, destructiveTitle: destructiveButtonTitle, cancelButtonTitle: cancelButtonTitle, otherButtonTitles: otherButtonTitles, buttonTappedHandler: buttonTappedHandler)
+            UIActionSheet.showIn(self.view,
+                                 title: title,
+                                 destructiveTitle: destructiveButtonTitle,
+                                 cancelButtonTitle: cancelButtonTitle,
+                                 otherButtonTitles: otherButtonTitles,
+                                 buttonTappedHandler: buttonTappedHandler)
         }
+        
     }
+    
 }

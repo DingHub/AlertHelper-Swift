@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         showActionSheet(//"Title",
                         //message: "Message",
                         //destructiveButtonTitle: "destructive",
-//                        cancelButtonTitle: "cancel",
+                        //cancelButtonTitle: "cancel",
                         otherButtonTitles: ["boy", "girl"]) { index in
                             print(index)
         }
