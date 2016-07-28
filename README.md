@@ -1,7 +1,7 @@
 # AlertHelper-Swift
 
 Show an alertView or actionSheet with a call back block.<br>
-If the system version < 8.0, we will use UIAlertView  or UIActionSheet, otherwise, UIAlertController.
+If the system version < 8.0, we will use UIAlertView  or UIActionSheet, otherwise, UIAlertController.<br>
 
 usage
 ---
@@ -19,7 +19,7 @@ usage
         }
     }
 ```
- We can also show an action sheet just almost like above.<br>
+ We can also show an action sheet just almost like above:<br>
 ```
     @IBAction func actionSheetAction(sender: AnyObject) {
         /**
