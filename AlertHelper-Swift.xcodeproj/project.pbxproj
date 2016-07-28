@@ -13,7 +13,8 @@
 		841219A51D3F10A200069CE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841219A41D3F10A200069CE1 /* Assets.xcassets */; };
 		841219A81D3F10A200069CE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841219A61D3F10A200069CE1 /* LaunchScreen.storyboard */; };
 		841219B11D3F11AD00069CE1 /* UIAlertView+block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841219B01D3F11AD00069CE1 /* UIAlertView+block.swift */; };
-		844C5C3E1D3F19580059A8E4 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C5C3D1D3F19580059A8E4 /* AlertHelper.swift */; };
+		844154B31D49D8CF0067C8CB /* UIViewController+BlockAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844154B21D49D8CF0067C8CB /* UIViewController+BlockAlert.swift */; };
+		844154B51D49DD700067C8CB /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844154B41D49DD700067C8CB /* AlertHelper.swift */; };
 		844C5C401D3F19BC0059A8E4 /* UIActionSheet+block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C5C3F1D3F19BC0059A8E4 /* UIActionSheet+block.swift */; };
 		844C5C421D3F226F0059A8E4 /* UIAlertCotroller+block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C5C411D3F226F0059A8E4 /* UIAlertCotroller+block.swift */; };
 /* End PBXBuildFile section */
@@ -27,7 +28,8 @@
 		841219A71D3F10A200069CE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		841219A91D3F10A200069CE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841219B01D3F11AD00069CE1 /* UIAlertView+block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertView+block.swift"; sourceTree = "<group>"; };
-		844C5C3D1D3F19580059A8E4 /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		844154B21D49D8CF0067C8CB /* UIViewController+BlockAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+BlockAlert.swift"; sourceTree = "<group>"; };
+		844154B41D49DD700067C8CB /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		844C5C3F1D3F19BC0059A8E4 /* UIActionSheet+block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIActionSheet+block.swift"; sourceTree = "<group>"; };
 		844C5C411D3F226F0059A8E4 /* UIAlertCotroller+block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertCotroller+block.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,7 +78,8 @@
 		841219AF1D3F10B800069CE1 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
-				844C5C3D1D3F19580059A8E4 /* AlertHelper.swift */,
+				844154B21D49D8CF0067C8CB /* UIViewController+BlockAlert.swift */,
+				844154B41D49DD700067C8CB /* AlertHelper.swift */,
 				841219B01D3F11AD00069CE1 /* UIAlertView+block.swift */,
 				844C5C3F1D3F19BC0059A8E4 /* UIActionSheet+block.swift */,
 				844C5C411D3F226F0059A8E4 /* UIAlertCotroller+block.swift */,
@@ -155,10 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				844C5C3E1D3F19580059A8E4 /* AlertHelper.swift in Sources */,
 				844C5C401D3F19BC0059A8E4 /* UIActionSheet+block.swift in Sources */,
 				841219B11D3F11AD00069CE1 /* UIAlertView+block.swift in Sources */,
+				844154B31D49D8CF0067C8CB /* UIViewController+BlockAlert.swift in Sources */,
 				841219A01D3F10A200069CE1 /* ViewController.swift in Sources */,
+				844154B51D49DD700067C8CB /* AlertHelper.swift in Sources */,
 				8412199E1D3F10A200069CE1 /* AppDelegate.swift in Sources */,
 				844C5C421D3F226F0059A8E4 /* UIAlertCotroller+block.swift in Sources */,
 			);

@@ -18,25 +18,28 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
-    @IBAction func showAlertView(sender: AnyObject) {
-        showAlertViewFor(self,
-                         title: "Title",
-                         message: "Message",
-                         destructiveButtonTitle: "destructive",
-                         cancelButtonTitle: "cancel",
-                         otherButtonTitles: ["boy", "girl"]) { index in
-                            print(index)
+    @IBAction func alertAction(sender: AnyObject) {
+        /**
+         *  Not ervery parameter is nessesary, you can note some with "//" to see diffrent effects
+         */
+        showAlertView("Title",
+                      message: "Message",
+                      destructiveButtonTitle: "destructive",
+                      cancelButtonTitle: "cancel",
+                      otherButtonTitles: ["boy", "girl"]) { buttonIndex in
+                        print(buttonIndex)
         }
     }
 
-    @IBAction func showActionSheet(sender: AnyObject) {
-        
-        showActionSheetFor(self,
-                           title: "Title",
-                           message: "Message",
-                           destructiveButtonTitle: "destructive",
-                           cancelButtonTitle: "cancel",
-                           otherButtonTitles: ["boy", "girl"]) { index in
+    @IBAction func actionSheetAction(sender: AnyObject) {
+        /**
+         *  You can delete "//" to see different effects.
+         */
+        showActionSheet(//"Title",
+                        //message: "Message",
+                        //destructiveButtonTitle: "destructive",
+//                        cancelButtonTitle: "cancel",
+                        otherButtonTitles: ["boy", "girl"]) { index in
                             print(index)
         }
     }

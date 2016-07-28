@@ -21,14 +21,14 @@
                                 <rect key="frame" x="237" y="285" width="127" height="30"/>
                                 <state key="normal" title="Show action sheet"/>
                                 <connections>
-                                    <action selector="showActionSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="14b-re-cc1"/>
+                                    <action selector="actionSheetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jw4-2X-tBT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQe-Ro-31V">
                                 <rect key="frame" x="247" y="247" width="108" height="30"/>
                                 <state key="normal" title="Show alert view"/>
                                 <connections>
-                                    <action selector="showAlertView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ziv-aC-S5y"/>
+                                    <action selector="alertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7vO-Aw-jTH"/>
                                 </connections>
                             </button>
                         </subviews>

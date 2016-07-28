@@ -11,14 +11,14 @@ import UIKit
 @available(iOS 8.0, *)
 extension UIAlertController {
     public static func show(style: UIAlertControllerStyle = .Alert,
-                     viewController: UIViewController,
-                     sourceRect: CGRect? = nil,
-                     title: String?,
-                     message: String?,
-                     destructiveButtonTitle: String?,
-                     cancelButtonTitle: String?,
-                     otherButtonTitles: [String]?,
-                     buttonTappedHandler: AlertButtonTappedBlock?) {
+                            viewController: UIViewController,
+                            sourceRect: CGRect? = nil,
+                            title: String? = nil,
+                            message: String? = nil,
+                            destructiveButtonTitle: String? = nil,
+                            cancelButtonTitle: String? = nil,
+                            otherButtonTitles: [String]? = nil,
+                            buttonTappedHandler: AlertButtonTappedBlock? = nil) {
         
         let alertController = UIAlertController(title: title, message: message, preferredStyle: style)
         if let destructiveButtonTitle = destructiveButtonTitle {
@@ -51,8 +51,7 @@ extension UIAlertController {
                 })
                 alertController.addAction(action)
             }
-        }
-        
+        }        
         if let popoverController = alertController.popoverPresentationController {
             popoverController.sourceView = viewController.view
             if let sourceRect = sourceRect {
@@ -63,4 +62,5 @@ extension UIAlertController {
         }
         viewController.presentViewController(alertController, animated: true, completion: nil)
     }
+
 }
