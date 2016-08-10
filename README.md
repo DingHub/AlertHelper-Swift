@@ -1,10 +1,10 @@
 # AlertHelper-Swift
 
-An extension of UIViewController to add handy methods to show alerts with button call back block.<br>
+An extension of UIViewController to add handy methods to show alerts with button call back closure.<br>
 If the system version < 8.0, we will use UIAlertView  or UIActionSheet, otherwise, UIAlertController.<br>
 
 Impletion :<br>
-Extensions of UIAlertView, UIActionSheet and UIAlertController to add block use, and an extension of UIViewController to show alert.<br>
+Extensions of UIAlertView, UIActionSheet and UIAlertController to add closure use, and an extension of UIViewController to show alert.<br>
 
 usage
 ---
