@@ -12,11 +12,11 @@
 		841219A31D3F10A200069CE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841219A11D3F10A200069CE1 /* Main.storyboard */; };
 		841219A51D3F10A200069CE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841219A41D3F10A200069CE1 /* Assets.xcassets */; };
 		841219A81D3F10A200069CE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841219A61D3F10A200069CE1 /* LaunchScreen.storyboard */; };
-		841219B11D3F11AD00069CE1 /* UIAlertView+block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841219B01D3F11AD00069CE1 /* UIAlertView+block.swift */; };
-		844154B31D49D8CF0067C8CB /* UIViewController+BlockAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844154B21D49D8CF0067C8CB /* UIViewController+BlockAlert.swift */; };
-		844154B51D49DD700067C8CB /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844154B41D49DD700067C8CB /* AlertHelper.swift */; };
-		844C5C401D3F19BC0059A8E4 /* UIActionSheet+block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C5C3F1D3F19BC0059A8E4 /* UIActionSheet+block.swift */; };
-		844C5C421D3F226F0059A8E4 /* UIAlertCotroller+block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C5C411D3F226F0059A8E4 /* UIAlertCotroller+block.swift */; };
+		843E53041D5ACC50005179C2 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E52FF1D5ACC50005179C2 /* AlertHelper.swift */; };
+		843E53051D5ACC50005179C2 /* UIActionSheet+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E53001D5ACC50005179C2 /* UIActionSheet+Closure.swift */; };
+		843E53061D5ACC50005179C2 /* UIAlertCotroller+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E53011D5ACC50005179C2 /* UIAlertCotroller+Closure.swift */; };
+		843E53071D5ACC50005179C2 /* UIAlertView+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E53021D5ACC50005179C2 /* UIAlertView+Closure.swift */; };
+		843E53081D5ACC50005179C2 /* UIViewController+ClosureAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843E53031D5ACC50005179C2 /* UIViewController+ClosureAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +27,11 @@
 		841219A41D3F10A200069CE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		841219A71D3F10A200069CE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		841219A91D3F10A200069CE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		841219B01D3F11AD00069CE1 /* UIAlertView+block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertView+block.swift"; sourceTree = "<group>"; };
-		844154B21D49D8CF0067C8CB /* UIViewController+BlockAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+BlockAlert.swift"; sourceTree = "<group>"; };
-		844154B41D49DD700067C8CB /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
-		844C5C3F1D3F19BC0059A8E4 /* UIActionSheet+block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIActionSheet+block.swift"; sourceTree = "<group>"; };
-		844C5C411D3F226F0059A8E4 /* UIAlertCotroller+block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertCotroller+block.swift"; sourceTree = "<group>"; };
+		843E52FF1D5ACC50005179C2 /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		843E53001D5ACC50005179C2 /* UIActionSheet+Closure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIActionSheet+Closure.swift"; sourceTree = "<group>"; };
+		843E53011D5ACC50005179C2 /* UIAlertCotroller+Closure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertCotroller+Closure.swift"; sourceTree = "<group>"; };
+		843E53021D5ACC50005179C2 /* UIAlertView+Closure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertView+Closure.swift"; sourceTree = "<group>"; };
+		843E53031D5ACC50005179C2 /* UIViewController+ClosureAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ClosureAlert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +78,11 @@
 		841219AF1D3F10B800069CE1 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
-				844154B21D49D8CF0067C8CB /* UIViewController+BlockAlert.swift */,
-				844154B41D49DD700067C8CB /* AlertHelper.swift */,
-				841219B01D3F11AD00069CE1 /* UIAlertView+block.swift */,
-				844C5C3F1D3F19BC0059A8E4 /* UIActionSheet+block.swift */,
-				844C5C411D3F226F0059A8E4 /* UIAlertCotroller+block.swift */,
+				843E52FF1D5ACC50005179C2 /* AlertHelper.swift */,
+				843E53001D5ACC50005179C2 /* UIActionSheet+Closure.swift */,
+				843E53011D5ACC50005179C2 /* UIAlertCotroller+Closure.swift */,
+				843E53021D5ACC50005179C2 /* UIAlertView+Closure.swift */,
+				843E53031D5ACC50005179C2 /* UIViewController+ClosureAlert.swift */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -158,13 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				844C5C401D3F19BC0059A8E4 /* UIActionSheet+block.swift in Sources */,
-				841219B11D3F11AD00069CE1 /* UIAlertView+block.swift in Sources */,
-				844154B31D49D8CF0067C8CB /* UIViewController+BlockAlert.swift in Sources */,
+				843E53061D5ACC50005179C2 /* UIAlertCotroller+Closure.swift in Sources */,
+				843E53041D5ACC50005179C2 /* AlertHelper.swift in Sources */,
 				841219A01D3F10A200069CE1 /* ViewController.swift in Sources */,
-				844154B51D49DD700067C8CB /* AlertHelper.swift in Sources */,
+				843E53081D5ACC50005179C2 /* UIViewController+ClosureAlert.swift in Sources */,
 				8412199E1D3F10A200069CE1 /* AppDelegate.swift in Sources */,
-				844C5C421D3F226F0059A8E4 /* UIAlertCotroller+block.swift in Sources */,
+				843E53051D5ACC50005179C2 /* UIActionSheet+Closure.swift in Sources */,
+				843E53071D5ACC50005179C2 /* UIAlertView+Closure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
