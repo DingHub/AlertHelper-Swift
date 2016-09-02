@@ -9,11 +9,10 @@
 import UIKit
 
 public typealias AlertButtonTappedAction = (Int) -> Void;
-var alertButtonTappedHandler: AlertButtonTappedAction?
 
 public class AlertHelper: NSObject, UIAlertViewDelegate, UIActionSheetDelegate {
+    
     public static let sharedHelper = AlertHelper()
-    private override init() {}
     
     public func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
         if let handler = alertButtonTappedHandler {
@@ -28,5 +27,12 @@ public class AlertHelper: NSObject, UIAlertViewDelegate, UIActionSheetDelegate {
             alertButtonTappedHandler = nil
         }
     }
+    
+    private override init() {}
+    private var alertButtonTappedHandler: AlertButtonTappedAction?
+    func setButtonTappedHandler(action: AlertButtonTappedAction?) {
+        alertButtonTappedHandler = action
+    }
+    
 }
 

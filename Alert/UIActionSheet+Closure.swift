@@ -30,8 +30,7 @@ public extension UIActionSheet {
                 actionSheet.addButtonWithTitle(title)
             }
         }
-        
-        alertButtonTappedHandler = buttonTappedHandler
+        AlertHelper.sharedHelper.setButtonTappedHandler(buttonTappedHandler)
         actionSheet.showInView(view)
         
     }

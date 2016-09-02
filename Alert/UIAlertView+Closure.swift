@@ -29,8 +29,7 @@ public extension UIAlertView {
                 alertView.addButtonWithTitle(title)
             }
         }
-        
-        alertButtonTappedHandler = buttonTappedHandler
+        AlertHelper.sharedHelper.setButtonTappedHandler(buttonTappedHandler)
         alertView.show()
         
     }
