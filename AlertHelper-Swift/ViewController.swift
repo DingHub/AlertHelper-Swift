@@ -18,11 +18,11 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
-    @IBAction func alertAction(sender: AnyObject) {
+    @IBAction func alertAction(_ sender: AnyObject) {
         /**
          *  Not ervery parameter is nessesary, you can note some with "//" to see diffrent effects
          */
-        showAlertView("Title",
+        showAlertView(title: "Title",
                       message: "Message",
                       destructiveButtonTitle: "destructive",
                       cancelButtonTitle: "cancel",
@@ -30,17 +30,17 @@ class ViewController: UIViewController {
                         print(buttonIndex)
         }
     }
-
-    @IBAction func actionSheetAction(sender: AnyObject) {
+    
+    @IBAction func actionSheetAction(_ sender: AnyObject) {
         /**
          *  You can delete "//" to see different effects.
          */
         showActionSheet(//"Title",
-                        //message: "Message",
-                        //destructiveButtonTitle: "destructive",
-                        //cancelButtonTitle: "cancel",
-                        otherButtonTitles: ["boy", "girl"]) { index in
-                            print(index)
+            //message: "Message",
+            //destructiveButtonTitle: "destructive",
+            //cancelButtonTitle: "cancel",
+        otherButtonTitles: ["boy", "girl"]) { index in
+            print(index)
         }
     }
 }

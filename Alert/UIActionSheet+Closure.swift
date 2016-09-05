@@ -27,11 +27,11 @@ public extension UIActionSheet {
         
         if let otherButtonTitles = otherButtonTitles {
             for title in otherButtonTitles {
-                actionSheet.addButtonWithTitle(title)
+                actionSheet.addButton(withTitle: title)
             }
         }
-        AlertHelper.sharedHelper.setButtonTappedHandler(buttonTappedHandler)
-        actionSheet.showInView(view)
+        AlertHelper.sharedHelper.setButtonTappedHandler(action: buttonTappedHandler)
+        actionSheet.show(in: view)
         
     }
 }
