@@ -35,7 +35,8 @@ class ViewController: UIViewController {
         /**
          *  You can delete "//" to see different effects.
          */
-        showActionSheet(//"Title",
+        showActionSheet(
+            //title: "Title",
             //message: "Message",
             //destructiveButtonTitle: "destructive",
             //cancelButtonTitle: "cancel",
