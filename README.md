@@ -37,8 +37,4 @@ usage
         }
     }
 ```
-  <br>
-  
-Swift3 branch is ready, I'll combine the branch to master when the final official version of Swift3 released.
-
 You can also find an Objective-C version [HERE](https://github.com/DingHub/AlertHelper-OC)
