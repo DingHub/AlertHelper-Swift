@@ -11,7 +11,7 @@ import UIKit
 @available(iOS 8.0, *)
 public extension UIAlertController {
     
-    public static func show(style: UIAlertControllerStyle = .Alert,
+    public static func show(style: UIAlertControllerStyle = .alert,
                             viewController: UIViewController,
                             sourceRect: CGRect? = nil,
                             title: String? = nil,
@@ -24,14 +24,14 @@ public extension UIAlertController {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: style)
         
         if let destructiveButtonTitle = destructiveButtonTitle {
-            let action = UIAlertAction(title: destructiveButtonTitle, style: .Destructive, handler: { (UIAlertAction) in
+            let action = UIAlertAction(title: destructiveButtonTitle, style: .destructive, handler: { (UIAlertAction) in
                 buttonTappedHandler?(0)
             })
             alertController.addAction(action)
         }
         
         if let cancelButtonTitle = cancelButtonTitle {
-            let action = UIAlertAction(title: cancelButtonTitle, style: .Cancel, handler: { (UIAlertAction) in
+            let action = UIAlertAction(title: cancelButtonTitle, style: .cancel, handler: { (UIAlertAction) in
                 if destructiveButtonTitle != nil {
                     buttonTappedHandler?(1)
                 } else {
@@ -42,9 +42,9 @@ public extension UIAlertController {
         }
         
         if let otherButtonTitles = otherButtonTitles {
-            for (index, title) in otherButtonTitles.enumerate() {
+            for (index, title) in otherButtonTitles.enumerated() {
                 
-                let action = UIAlertAction(title: title, style: .Default, handler: { (UIAlertAction) in
+                let action = UIAlertAction(title: title, style: .default, handler: { (UIAlertAction) in
                     if destructiveButtonTitle != nil && cancelButtonTitle != nil {
                         buttonTappedHandler?(2 + index)
                     } else if destructiveButtonTitle == nil && cancelButtonTitle == nil {
@@ -67,6 +67,6 @@ public extension UIAlertController {
             }
         }
         
-        viewController.presentViewController(alertController, animated: true, completion: nil)
+        viewController.present(alertController, animated: true, completion: nil)
     }
 }

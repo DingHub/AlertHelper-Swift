@@ -26,10 +26,10 @@ public extension UIAlertView {
         
         if let otherButtonTitles = otherButtonTitles {
             for title in otherButtonTitles {
-                alertView.addButtonWithTitle(title)
+                alertView.addButton(withTitle: title)
             }
         }
-        AlertHelper.sharedHelper.setButtonTappedHandler(buttonTappedHandler)
+        AlertHelper.sharedHelper.setButtonTappedHandler(action: buttonTappedHandler)
         alertView.show()
         
     }

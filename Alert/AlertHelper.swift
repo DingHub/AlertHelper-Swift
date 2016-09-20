@@ -14,14 +14,14 @@ public class AlertHelper: NSObject, UIAlertViewDelegate, UIActionSheetDelegate {
     
     public static let sharedHelper = AlertHelper()
     
-    public func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
+    public func alertView(_ alertView: UIAlertView, clickedButtonAt buttonIndex: Int) {
         if let handler = alertButtonTappedHandler {
             handler(buttonIndex)
             alertButtonTappedHandler = nil
         }
     }
     
-    public func actionSheet(actionSheet: UIActionSheet, clickedButtonAtIndex buttonIndex: Int) {
+    public func actionSheet(_ actionSheet: UIActionSheet, clickedButtonAt buttonIndex: Int) {
         if let handler = alertButtonTappedHandler {
             handler(buttonIndex)
             alertButtonTappedHandler = nil

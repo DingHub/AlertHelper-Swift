@@ -36,7 +36,7 @@ public extension UIViewController {
                                    otherButtonTitles: otherButtonTitles,
                                    buttonTappedHandler: buttonTappedHandler)
         } else {
-            UIAlertView.show(title,
+            UIAlertView.show(title: title,
                              message: message,
                              cancelButtonTitle: cancelButtonTitle,
                              otherButtonTitles: otherButtonTitles,
@@ -65,7 +65,7 @@ public extension UIViewController {
                                 buttonTappedHandler: AlertButtonTappedAction? = nil) {
         
         if #available(iOS 8.0, *) {
-            UIAlertController.show(.ActionSheet,
+            UIAlertController.show(style: .actionSheet,
                                    viewController: self,
                                    sourceRect: sourceRect,
                                    title: title,
@@ -75,7 +75,7 @@ public extension UIViewController {
                                    otherButtonTitles: otherButtonTitles,
                                    buttonTappedHandler: buttonTappedHandler)
         } else {
-            UIActionSheet.showIn(self.view,
+            UIActionSheet.showIn(view: self.view,
                                  title: title,
                                  destructiveTitle: destructiveButtonTitle,
                                  cancelButtonTitle: cancelButtonTitle,
