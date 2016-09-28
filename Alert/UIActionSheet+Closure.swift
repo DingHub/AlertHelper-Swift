@@ -13,12 +13,12 @@ public extension UIActionSheet {
     /**
      - parameter buttonTappedHandler: The index of buttons will ordered like : destructive button -> cancel button -> other buttons
      */
-    public static func showIn(view: UIView,
-                              title: String? = nil,
-                              destructiveTitle: String? = nil,
-                              cancelButtonTitle: String? = nil,
-                              otherButtonTitles: [String]? = nil,
-                              buttonTappedHandler: AlertButtonTappedAction? = nil) {
+    public static func show(in view: UIView,
+                            title: String? = nil,
+                            destructiveTitle: String? = nil,
+                            cancelButtonTitle: String? = nil,
+                            otherButtonTitles: [String]? = nil,
+                            buttonTappedHandler: AlertButtonTappedAction? = nil) {
         
         let actionSheet = UIActionSheet(title: title,
                                         delegate: AlertHelper.sharedHelper,

@@ -75,12 +75,12 @@ public extension UIViewController {
                                    otherButtonTitles: otherButtonTitles,
                                    buttonTappedHandler: buttonTappedHandler)
         } else {
-            UIActionSheet.showIn(view: self.view,
-                                 title: title,
-                                 destructiveTitle: destructiveButtonTitle,
-                                 cancelButtonTitle: cancelButtonTitle,
-                                 otherButtonTitles: otherButtonTitles,
-                                 buttonTappedHandler: buttonTappedHandler)
+            UIActionSheet.show(in: self.view,                               
+                               title: title,
+                               destructiveTitle: destructiveButtonTitle,
+                               cancelButtonTitle: cancelButtonTitle,
+                               otherButtonTitles: otherButtonTitles,
+                               buttonTappedHandler: buttonTappedHandler)
         }
         
     }
