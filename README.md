@@ -8,7 +8,7 @@ Extensions of UIAlertView, UIActionSheet and UIAlertController to add closure us
 
 usage
 ---
-```
+```swift
     @IBAction func alertAction(sender: AnyObject) {
         /**
          *  Not ervery parameter is nessesary, you can note some with "//" to see diffrent effects
@@ -22,8 +22,8 @@ usage
         }
     }
 ```
- We can also show an action sheet just almost like bellow:<br>
-```
+ We can also show an action sheet just almost like above:<br>
+```swift
     @IBAction func actionSheetAction(sender: AnyObject) {
         /**
          *  You can delete "//" to see different effects.
