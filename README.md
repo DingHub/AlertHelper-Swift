@@ -22,7 +22,7 @@ usage
         }
     }
 ```
- We can also show an action sheet just almost like above:<br>
+ We can also show an action sheet just almost like bellow:<br>
 ```
     @IBAction func actionSheetAction(sender: AnyObject) {
         /**
